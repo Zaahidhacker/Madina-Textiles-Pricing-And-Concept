@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Madina Textiles — Social Media Proposal</title>
+<meta name="description" content="Social media management proposal for Madina Textiles. Facebook, TikTok, Instagram, WhatsApp. 12 reels + 8 photo posts monthly. LKR 40,000–60,000/month." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070C16'/%3E%3Ctext x='32' y='42' font-family='Poppins,Arial,sans-serif' font-size='26' font-weight='700' fill='%23F0B64A' text-anchor='middle'%3EMT%3C/text%3E%3C/svg%3E" />
+<meta name="theme-color" content="#070C16" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Madina Textiles — Social Media Proposal" />
+<meta property="og:description" content="Facebook · TikTok · Instagram · WhatsApp. 12 reels + 8 photo posts a month, daily stock & price updates. LKR 40–60K/month — all-inclusive." />
+<meta property="og:image" content="https://zaahidhacker.github.io/Madina-Textiles-Pricing-And-Concept/assets/hero-fabric.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Social Media Management — Madina Textiles",
+  "description": "Monthly retainer: 12 reels + 8 photo posts across Facebook, TikTok and Instagram, plus daily WhatsApp community stock and price updates.",
+  "provider": { "@type": "Person", "name": "Social Media Manager", "jobTitle": "Content Creator & Editor" },
+  "offer": {
+    "@type": "Offer",
+    "priceCurrency": "LKR",
+    "priceSpecification": { "@type": "PriceSpecification", "minPrice": 40000, "maxPrice": 60000, "priceCurrency": "LKR" },
+    "description": "Monthly retainer. Itemized breakdown available on request."
+  }
+}
+</script>
+<style>
+  :root{
+    --bg:#070C16;
+    --bg-2:#0B1322;
+    --bg-3:#101B30;
+    --line:rgba(255,255,255,.09);
+    --line-soft:rgba(255,255,255,.055);
+    --ink:#F4F1EA;
+    --dim:#93A0B4;
+    --dim-2:#5F6C82;
+    --gold:#E8A33D;
+    --gold-2:#F5C563;
+    --gold-3:#C9821E;
+    --good:#4CC287;
+    --blue:#6590E6;
+    --r:20px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:#070C16}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;border-radius:4px}
+  section,header[id]{scroll-margin-top:84px}
+  .wrap{width:min(1160px,92%);margin-inline:auto}
+  .noise{position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");}
+
+  /* progress */
+  #progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
+    background:linear-gradient(90deg,var(--gold-3),var(--gold-2));box-shadow:0 0 12px rgba(232,163,61,.7)}
+
+  /* reveal */
+  .rv{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.22,1,.3,1),transform .7s cubic-bezier(.22,1,.3,1)}
+  .rv.in{opacity:1;transform:none}
+  .rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}.rv.d4{transition-delay:.32s}.rv.d5{transition-delay:.4s}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:inherit;
+    font-weight:700;cursor:pointer;border:none;border-radius:999px;letter-spacing:.3px;
+    transition:transform .2s ease,box-shadow .2s ease,background .2s,border-color .2s}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#0A0F1C;
+    box-shadow:0 14px 34px -10px rgba(232,163,61,.6)}
+  .btn-gold:hover{transform:translateY(-3px);box-shadow:0 20px 44px -10px rgba(232,163,61,.75)}
+  .btn-line{border:1px solid rgba(255,255,255,.22);color:var(--ink);background:rgba(255,255,255,.03)}
+  .btn-line:hover{border-color:var(--gold-2);color:var(--gold-2);transform:translateY(-3px)}
+
+  /* ============ NAV ============ */
+  nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(7,12,22,.78);
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line-soft)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{display:flex;align-items:center;gap:11px;font-weight:700}
+  .brand .dot{width:36px;height:36px;border-radius:11px;flex:none;display:grid;place-items:center;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold-3));color:#0A0F1C;font-weight:900;font-size:.78rem}
+  .brand small{display:block;font-weight:400;color:var(--dim);font-size:.62rem;letter-spacing:1.4px;text-transform:uppercase}
+  .nav-links{display:flex;align-items:center;gap:26px;font-size:.83rem;font-weight:500;color:#C9D2E0}
+  .nav-links a:not(.btn){opacity:.8;transition:.2s}
+  .nav-links a:not(.btn):hover{opacity:1;color:var(--gold-2)}
+  .nav-accept{padding:.55rem 1.25rem;font-size:.8rem}
+
+  /* ============ HERO ============ */
+  header{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:140px 0 0;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;z-index:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:72% 50%;
+    transform:scale(1.06);animation:drift 18s ease-in-out infinite alternate}
+  @keyframes drift{to{transform:scale(1.12) translateY(-1.5%)}}
+  .hero-bg::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(7,12,22,.82) 0%,rgba(7,12,22,.45) 40%,rgba(7,12,22,.88) 82%,var(--bg) 100%),
+               radial-gradient(900px 480px at 18% 78%,rgba(232,163,61,.14),transparent 60%)}
+  .hero-in{position:relative;z-index:1}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;font-weight:700;
+    letter-spacing:2.6px;text-transform:uppercase;color:var(--gold-2);
+    border:1px solid rgba(245,197,99,.4);border-radius:999px;padding:.55rem 1.15rem;background:rgba(245,197,99,.08)}
+  .eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--gold-2);
+    box-shadow:0 0 0 0 rgba(245,197,99,.65);animation:pulse 2s infinite;flex:none}
+  @keyframes pulse{70%{box-shadow:0 0 0 10px rgba(245,197,99,0)}100%{box-shadow:0 0 0 0 rgba(245,197,99,0)}}
+  h1{font-size:clamp(2.7rem,8.6vw,6.4rem);font-weight:900;text-transform:uppercase;
+    line-height:.97;letter-spacing:-2.5px;margin:26px 0 22px}
+  h1 .stroke{display:block;color:rgba(244,241,234,.5)}
+  @supports ((-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff)){
+    h1 .stroke{color:transparent;-webkit-text-stroke:1.5px rgba(244,241,234,.55)}
+  }
+  h1 .fill{display:block;background:linear-gradient(100deg,var(--gold-2) 15%,var(--gold) 55%,var(--gold-3) 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero-sub{color:#C4CEDD;font-size:clamp(.92rem,1.5vw,1.08rem);max-width:58ch;font-weight:300}
+  .hero-sub b{color:#fff;font-weight:600}
+  .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:36px}
+  .btn-xl{padding:1.1rem 2.3rem;font-size:1.02rem}
+  .price-chip{display:inline-flex;align-items:center;gap:10px;font-size:.82rem;font-weight:700;color:var(--gold-2);
+    border:1px dashed rgba(245,197,99,.45);border-radius:999px;padding:.9rem 1.5rem;background:rgba(7,12,22,.5)}
+  .price-chip span{color:var(--dim);font-weight:400}
+
+  .hero-stats{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--line);margin-top:64px;backdrop-filter:blur(6px)}
+  .hstat{padding:26px 26px 30px;border-right:1px solid var(--line);transition:background .3s}
+  .hstat:last-child{border-right:none}
+  .hstat:hover{background:rgba(255,255,255,.035)}
+  .hstat b{display:flex;align-items:baseline;gap:4px;font-size:clamp(2rem,4vw,3rem);font-weight:800;
+    letter-spacing:-1.5px;line-height:1;color:#fff}
+  .hstat b i{font-style:normal;font-size:.5em;font-weight:700;color:var(--gold-2)}
+  .hstat span{display:block;margin-top:8px;font-size:.68rem;font-weight:600;color:var(--dim);
+    text-transform:uppercase;letter-spacing:1.8px}
+
+  /* ============ MARQUEE ============ */
+  .marquee{background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));color:#0A0F1C;
+    overflow:hidden;padding:.85rem 0;border-block:1px solid rgba(0,0,0,.2)}
+  .mq-track{display:flex;width:max-content;animation:mq 26s linear infinite}
+  .mq-track span{display:inline-flex;align-items:center;gap:1.6rem;padding-right:1.6rem;
+    font-size:.86rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;white-space:nowrap}
+  .mq-track span::after{content:"✦";font-size:.8em}
+  @keyframes mq{to{transform:translateX(-50%)}}
+
+  /* ============ SECTIONS ============ */
+  section{padding:110px 0;position:relative}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;
+    margin-bottom:54px;border-bottom:1px solid var(--line);padding-bottom:34px}
+  .sec-left .idx{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+  .sec-left .idx b{font-size:.78rem;font-weight:800;color:#0A0F1C;background:linear-gradient(135deg,var(--gold-2),var(--gold));
+    border-radius:8px;padding:.22rem .6rem;letter-spacing:1px}
+  .sec-left .idx span{font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--dim-2)}
+  h2{font-size:clamp(1.9rem,4.6vw,3.3rem);font-weight:800;text-transform:uppercase;letter-spacing:-1.2px;line-height:1.04}
+  h2 em{font-style:normal;color:var(--gold)}
+  @supports ((-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff)){
+    h2 em{color:transparent;-webkit-text-stroke:1.2px var(--gold)}
+  }
+  .sec-head p{max-width:34ch;color:var(--dim);font-size:.92rem;text-align:right}
+
+  /* ---- scope rows ---- */
+  .rows{border-top:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:64px 1.25fr 1fr auto;gap:24px;align-items:center;
+    padding:30px 10px;border-bottom:1px solid var(--line);transition:background .3s,padding .3s;position:relative}
+  .row:hover{background:rgba(255,255,255,.03);padding-left:22px}
+  .row .pic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;
+    border:1px solid var(--line);background:var(--bg-2)}
+  .row h3{font-size:clamp(1.1rem,2.2vw,1.5rem);font-weight:700;letter-spacing:-.3px;text-transform:uppercase}
+  .row p{color:var(--dim);font-size:.88rem}
+  .tag{font-size:.64rem;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;
+    padding:.42rem .85rem;border-radius:999px;white-space:nowrap}
+  .tag.new{color:#0A0F1C;background:linear-gradient(135deg,var(--gold-2),var(--gold))}
+  .tag.live{color:var(--good);border:1px solid rgba(76,194,135,.4);background:rgba(76,194,135,.08)}
+
+  /* ---- calendar ---- */
+  .cal{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+  .day{border:1px solid var(--line);border-radius:16px;padding:18px 14px;min-height:150px;
+    display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,var(--bg-2),var(--bg));
+    transition:transform .25s,border-color .25s}
+  .day:hover{transform:translateY(-5px);border-color:rgba(245,197,99,.5)}
+  .day label{font-size:.66rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--dim-2)}
+  .pill{font-size:.74rem;font-weight:700;border-radius:10px;padding:.55rem .5rem;text-align:center;line-height:1.4}
+  .pill small{display:block;font-weight:400;font-size:.82em;opacity:.8}
+  .pill.reel{background:linear-gradient(135deg,rgba(245,197,99,.24),rgba(232,163,61,.1));
+    color:var(--gold-2);border:1px solid rgba(245,197,99,.35)}
+  .pill.photo{background:rgba(101,144,230,.1);color:#A9C4F5;border:1px solid rgba(101,144,230,.3)}
+  .pill.wa{background:rgba(76,194,135,.1);color:#7BDBAC;border:1px solid rgba(76,194,135,.32)}
+  .legend{display:flex;flex-wrap:wrap;gap:22px;margin-top:26px;font-size:.78rem;color:var(--dim)}
+  .legend i{display:inline-flex;align-items:center;gap:9px;font-style:normal}
+  .legend .sw{width:11px;height:11px;border-radius:3px;flex:none}
+
+  /* ---- workflow ---- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:st}
+  .step{position:relative;border:1px solid var(--line);border-radius:var(--r);padding:56px 26px 28px;
+    background:linear-gradient(180deg,var(--bg-2),var(--bg));overflow:hidden;
+    transition:transform .25s,border-color .25s,box-shadow .25s}
+  .step:hover{transform:translateY(-6px);border-color:rgba(245,197,99,.45);box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+  .step::before{counter-increment:st;content:"0" counter(st);position:absolute;top:6px;right:14px;
+    font-size:4.6rem;font-weight:900;letter-spacing:-3px;line-height:1;
+    color:rgba(245,197,99,.3)}
+  @supports ((-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff)){
+    .step::before{color:transparent;-webkit-text-stroke:1px rgba(245,197,99,.3)}
+  }
+  .step h3{font-size:1.02rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px}
+  .step p{font-size:.85rem;color:var(--dim)}
+  .step .who{display:inline-block;margin-top:16px;font-size:.68rem;font-weight:700;color:var(--gold-2);
+    background:rgba(245,197,99,.09);border:1px solid rgba(245,197,99,.25);border-radius:999px;padding:.34rem .8rem}
+
+  /* ---- market ---- */
+  .verdict{display:flex;align-items:center;gap:16px;border:1px solid rgba(245,197,99,.35);
+    background:linear-gradient(90deg,rgba(232,163,61,.12),rgba(232,163,61,.03));
+    border-radius:14px;padding:18px 24px;font-size:.92rem;font-weight:600;color:var(--gold-2);
+    margin-bottom:44px}
+  .verdict b{color:#fff}
+  .bars{display:flex;flex-direction:column;gap:14px;margin-bottom:46px}
+  .bar-row{display:grid;grid-template-columns:210px 1fr;gap:16px;align-items:center}
+  .bar-name{font-size:.84rem;font-weight:600;text-align:right}
+  .bar-name small{display:block;font-weight:400;color:var(--dim-2);font-size:.68rem}
+  .bar-track{background:var(--bg-2);border:1px solid var(--line-soft);border-radius:12px;height:54px;position:relative;overflow:hidden}
+  .bar-fill{height:100%;width:0;background:#232D40;border-radius:11px 0 0 11px;display:flex;align-items:center;
+    justify-content:flex-end;padding-right:14px;font-size:.8rem;font-weight:800;color:#fff;
+    transition:width 1.1s cubic-bezier(.22,1,.3,1)}
+  .bar-row.us .bar-fill{background:linear-gradient(90deg,var(--gold-3),var(--gold-2));
+    box-shadow:0 6px 22px -6px rgba(232,163,61,.6);color:#0A0F1C}
+  .bar-row.us .bar-name{color:var(--gold-2)}
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:var(--r);background:var(--bg-2)}
+  table{width:100%;border-collapse:collapse;min-width:780px;font-size:.85rem}
+  thead th{text-align:left;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim-2);
+    font-weight:700;padding:16px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02);white-space:nowrap}
+  tbody td{padding:18px 20px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:#C4CEDD}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr.us{background:linear-gradient(90deg,rgba(232,163,61,.13),rgba(232,163,61,.03));
+    box-shadow:inset 3px 0 0 var(--gold)}
+  tbody td b{color:#fff}
+  .price{font-weight:800;color:#fff;white-space:nowrap}
+  .price.yes{color:var(--gold-2)}
+  .src{font-size:.72rem;color:var(--dim-2);margin-top:16px;line-height:1.9}
+  .src a{color:var(--gold-3);text-decoration:underline;text-underline-offset:3px}
+
+  /* ---- price / worth ---- */
+  .worth{background:
+      radial-gradient(800px 400px at 100% 0%,rgba(232,163,61,.1),transparent 55%),
+      radial-gradient(700px 380px at 0% 100%,rgba(101,144,230,.07),transparent 55%),
+      var(--bg-2)}
+  .rate-hero{text-align:center;margin-bottom:64px}
+  .rate-hero .k{font-size:.7rem;font-weight:800;letter-spacing:3.4px;text-transform:uppercase;color:var(--gold-2)}
+  .rate{font-size:clamp(2.7rem,8vw,5.6rem);font-weight:900;letter-spacing:-3px;line-height:1.05;margin:14px 0 10px;
+    background:linear-gradient(110deg,var(--gold-2),var(--gold) 60%,var(--gold-3));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .rate-sub{color:var(--dim);font-size:.92rem}
+  .rate-sub b{color:#fff;font-weight:600}
+
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:56px}
+  .tile{border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;
+    background:linear-gradient(180deg,rgba(255,255,255,.025),transparent);
+    transition:transform .25s,border-color .25s}
+  .tile:hover{transform:translateY(-5px);border-color:rgba(245,197,99,.4)}
+  .tile b{display:block;font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:800;letter-spacing:-1px;
+    color:var(--gold-2);line-height:1.1}
+  .tile b.white{color:#fff}
+  .tile span{display:block;font-size:.8rem;color:var(--dim);margin-top:8px;line-height:1.55}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:56px}
+  .half{border-radius:var(--r);padding:34px 32px;border:1px solid var(--line)}
+  .half.them{background:rgba(255,255,255,.02)}
+  .half.us{background:linear-gradient(160deg,rgba(232,163,61,.14),rgba(232,163,61,.04));
+    border-color:rgba(245,197,99,.45);box-shadow:0 26px 60px -24px rgba(232,163,61,.35)}
+  .half .tagline{font-size:.66rem;font-weight:800;letter-spacing:2.4px;text-transform:uppercase;color:var(--dim-2);margin-bottom:16px}
+  .half.us .tagline{color:var(--gold-2)}
+  .half .amount{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:16px}
+  .half.us .amount{color:var(--gold-2)}
+  .half ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:.88rem;color:#C4CEDD}
+  .half li{display:flex;gap:11px;align-items:flex-start}
+  .half li::before{content:"—";color:var(--dim-2);flex:none}
+  .half.us li::before{content:"✓";color:var(--good);font-weight:800}
+  .half.them li.off{color:var(--dim-2);text-decoration:line-through;text-decoration-color:rgba(147,160,180,.5)}
+
+  .quality{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:60px}
+  .q{border-top:2px solid var(--gold);padding:24px 4px 0}
+  .q h3{font-size:.95rem;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+  .q p{font-size:.84rem;color:var(--dim)}
+
+  .worth-cta{text-align:center}
+  .worth-cta .note{font-size:.78rem;color:var(--dim-2);margin-top:18px}
+
+  /* ---- decision ---- */
+  #accept{text-align:center;padding:130px 0 140px;position:relative;overflow:hidden}
+  #accept::before{content:"";position:absolute;inset:0;
+    background:radial-gradient(700px 380px at 50% 60%,rgba(232,163,61,.13),transparent 65%)}
+  .accept-box{position:relative;max-width:680px;margin-inline:auto}
+  #accept .idx{justify-content:center}
+  #accept h2{margin-bottom:14px}
+  #accept p{color:var(--dim);font-size:.95rem}
+  .btn-accept{margin-top:36px;padding:1.25rem 3.6rem;font-size:1.12rem;
+    background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#0A0F1C;
+    box-shadow:0 20px 50px -12px rgba(232,163,61,.7);animation:bob 3s ease-in-out infinite}
+  .btn-accept:hover{transform:translateY(-4px) scale(1.02)}
+  .btn-accept.accepted{background:linear-gradient(135deg,#4CC287,#2FA36B);color:#fff;animation:none;
+    box-shadow:0 20px 50px -12px rgba(47,163,107,.6)}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  .accepted-note{max-width:480px;margin:28px auto 0;padding:16px 24px;border-radius:14px;
+    background:rgba(76,194,135,.09);border:1px solid rgba(76,194,135,.35);color:var(--good);
+    font-size:.9rem;font-weight:600;opacity:0;transform:translateY(8px);
+    transition:opacity .5s,transform .5s;pointer-events:none}
+  .accepted-note.show{opacity:1;transform:none}
+
+  footer{border-top:1px solid var(--line);padding:32px 0;font-size:.76rem;color:var(--dim-2)}
+  .foot-in{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+  footer b{color:#D7DEE9;font-weight:600}
+
+  #confetti{position:fixed;inset:0;z-index:100;pointer-events:none}
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:1020px){
+    .nav-links a:not(.btn){display:none}
+    .hero-stats{grid-template-columns:repeat(2,1fr)}
+    .hstat:nth-child(2){border-right:none}
+    .hstat:nth-child(1),.hstat:nth-child(2){border-bottom:1px solid var(--line)}
+    .row{grid-template-columns:56px 1fr auto;gap:16px}
+    .row p{grid-column:2/4;grid-row:2;margin-top:2px}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .tiles{grid-template-columns:repeat(2,1fr)}
+    .quality{grid-template-columns:1fr}
+    .sec-head{flex-direction:column;align-items:flex-start;gap:14px}
+    .sec-head p{text-align:left}
+  }
+  @media (max-width:640px){
+    section{padding:76px 0}
+    header{padding-top:110px}
+    .cal{grid-template-columns:repeat(2,1fr)}
+    .day{min-height:0}
+    .steps{grid-template-columns:1fr}
+    .tiles{grid-template-columns:1fr}
+    .split{grid-template-columns:1fr}
+    .hero-cta .btn{width:100%}
+    .price-chip{width:100%;justify-content:center}
+    .bar-row{grid-template-columns:1fr;gap:6px}
+    .bar-name{text-align:left}
+    .bar-track{height:46px}
+    .brand small{display:none}
+    .hstat{border-right:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="noise"></div>
+<div id="progress"></div>
+<canvas id="confetti"></canvas>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <span class="dot">MT</span>
+      <span>Madina Textiles<small>Social Media Proposal</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#scope">Scope</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#market">The Market</a>
+      <a href="#price">The Price</a>
+      <a class="btn btn-gold nav-accept" href="#accept">Accept Proposal</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="hero-bg"><img src="assets/hero-fabric.jpg" alt="Madina Textiles fabric" fetchpriority="high" decoding="async" /></div>
+  <div class="wrap hero-in">
+    <span class="eyebrow rv"><i></i>Proposal · Shazan Hafeez · Madina Textiles</span>
+    <h1 class="rv d1">
+      <span class="stroke">Your fabric.</span>
+      <span class="fill">Every feed.</span>
+    </h1>
+    <p class="hero-sub rv d2">
+      Facebook. TikTok. Instagram. WhatsApp. <b>12 reels + 8 photo posts a month</b>, daily stock &amp; price updates — done for you.
+    </p>
+    <div class="hero-cta rv d3">
+      <a class="btn btn-gold btn-xl" href="#accept">Accept Proposal</a>
+      <a class="btn btn-line btn-xl" href="#market">See the Math</a>
+      <span class="price-chip">LKR 40–60K / MO <span>· all-inclusive</span></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-stats rv d4">
+      <div class="hstat"><b><span class="count" data-n="12">0</span><i>/mo</i></b><span>Reels · Mon Wed Fri</span></div>
+      <div class="hstat"><b><span class="count" data-n="8">0</span><i>/mo</i></b><span>Photo posts · weekends</span></div>
+      <div class="hstat"><b><span class="count" data-n="4">0</span></b><span>Platforms managed</span></div>
+      <div class="hstat"><b><span class="count" data-n="30">0</span><i>/mo</i></b><span>WhatsApp broadcasts</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>12 reels</span><span>8 photo posts</span><span>4 platforms</span><span>Daily stock updates</span><span>CapCut editing</span><span>Zero effort</span><span>New pages built</span><span>Community run daily</span>
+    <span>12 reels</span><span>8 photo posts</span><span>4 platforms</span><span>Daily stock updates</span><span>CapCut editing</span><span>Zero effort</span><span>New pages built</span><span>Community run daily</span>
+  </div>
+</div>
+
+<!-- 01 SCOPE -->
+<section id="scope">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-left">
+        <div class="idx"><b>01</b><span>Scope</span></div>
+        <h2>Four channels.<br><em>One operator.</em></h2>
+      </div>
+      <p>Three new pages built from zero. One community kept alive daily.</p>
+    </div>
+    <div class="rows">
+      <div class="row rv">
+        <div class="pic"><svg width="26" height="26" viewBox="0 0 24 24" fill="#1877F2"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg></div>
+        <h3>Facebook</h3>
+        <p>New official page — setup, branding, reels, posting.</p>
+        <span class="tag new">New page</span>
+      </div>
+      <div class="row rv d1">
+        <div class="pic"><svg width="26" height="26" viewBox="0 0 24 24" fill="#F4F1EA"><path d="M16.6 5.82A4.28 4.28 0 0115.54 3h-3.09v12.4a2.59 2.59 0 11-1.84-2.48V9.77a5.97 5.97 0 105.11 5.9V9.01a7.03 7.03 0 004.1 1.32V7.24a4.2 4.2 0 01-3.22-1.42z"/></svg></div>
+        <h3>TikTok</h3>
+        <p>Trend-native edits for the fastest-growing feed in Sri Lanka.</p>
+        <span class="tag new">New page</span>
+      </div>
+      <div class="row rv d2">
+        <div class="pic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.3" fill="#E1306C" stroke="none"/></svg></div>
+        <h3>Instagram</h3>
+        <p>Reels + weekend photos for buyers who judge by look.</p>
+        <span class="tag new">New page</span>
+      </div>
+      <div class="row rv d3">
+        <div class="pic"><svg width="26" height="26" viewBox="0 0 24 24" fill="#25D366"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.5 1 .4.6 1 1.3 1.6 1.8.8.6 1.4.9 1.7 1 .2.1.4.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1l2 1c.2.1.4.2.5.3.1.2.1.7-.1 1.4z"/></svg></div>
+        <h3>WhatsApp Community</h3>
+        <p>Your existing community, run daily — stock availability + pricing.</p>
+        <span class="tag live">Existing · Live</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 CALENDAR -->
+<section id="calendar" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-left">
+        <div class="idx"><b>02</b><span>Content Calendar</span></div>
+        <h2>Every week.<br><em>Locked.</em></h2>
+      </div>
+      <p>20 finished assets a month, on schedule, on all four channels.</p>
+    </div>
+    <div class="cal">
+      <div class="day rv"><label>Mon</label><span class="pill reel">Reel<small>40–120s</small></span></div>
+      <div class="day rv d1"><label>Tue</label><span class="pill wa">WhatsApp<small>stock + price</small></span></div>
+      <div class="day rv d1"><label>Wed</label><span class="pill reel">Reel<small>40–120s</small></span></div>
+      <div class="day rv d2"><label>Thu</label><span class="pill wa">WhatsApp<small>stock + price</small></span></div>
+      <div class="day rv d2"><label>Fri</label><span class="pill reel">Reel<small>40–120s</small></span></div>
+      <div class="day rv d3"><label>Sat</label><span class="pill photo">Photo post<small>×2 weekend</small></span></div>
+      <div class="day rv d3"><label>Sun</label><span class="pill photo">Photo post<small>×2 weekend</small></span></div>
+    </div>
+    <div class="legend rv d4">
+      <i><span class="sw" style="background:var(--gold-2)"></span>3 reels/week — FB, TikTok &amp; IG</i>
+      <i><span class="sw" style="background:var(--blue)"></span>2 photo posts every weekend</i>
+      <i><span class="sw" style="background:var(--good)"></span>Daily WhatsApp updates — 7 days</i>
+    </div>
+  </div>
+</section>
+
+<!-- 03 WORKFLOW -->
+<section id="workflow">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-left">
+        <div class="idx"><b>03</b><span>Workflow</span></div>
+        <h2>You sell.<br><em>I do the rest.</em></h2>
+      </div>
+      <p>Fazal records. I edit. Faizan posts. Your team never stops selling.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <h3>Fazal records</h3>
+        <p>Raw video + photos from the store — new stock, shelves, store-boy interviews.</p>
+        <span class="who">Fazal · Store</span>
+      </div>
+      <div class="step rv d1">
+        <h3>I edit</h3>
+        <p>Cut, captioned, colour-treated in CapCut. Built to stop the scroll.</p>
+        <span class="who">CapCut · Edit + Captions</span>
+      </div>
+      <div class="step rv d2">
+        <h3>Faizan receives</h3>
+        <p>Final cut + ready caption, sent for upload.</p>
+        <span class="who">Faizan · Point of Contact</span>
+      </div>
+      <div class="step rv d3">
+        <h3>Goes live</h3>
+        <p>All three pages posted. WhatsApp community updated, same day.</p>
+        <span class="who">FB · TikTok · IG · WhatsApp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 MARKET -->
+<section id="market" style="background:var(--bg-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-left">
+        <div class="idx"><b>04</b><span>The Market · Sri Lanka 2026</span></div>
+        <h2>What this costs<br><em>elsewhere.</em></h2>
+      </div>
+      <p>Published rates from three Sri Lankan agencies, checked today.</p>
+    </div>
+
+    <div class="verdict rv">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--gold-2)" style="flex:none"><path d="M12 2l2.7 6.5L21.5 9l-5 4.6 1.4 6.9L12 17l-5.9 3.5L7.5 13.6l-5-4.6 6.8-.5L12 2z"/></svg>
+      <span>Same money buys less everywhere else. <b>HypeX charges LKR 80,000 for 1 platform and 8 posts.</b> This proposal: 4 platforms, 20 assets, daily updates — for less.</span>
+    </div>
+
+    <div class="bars rv" id="bars">
+      <div class="bar-row">
+        <div class="bar-name">E Lanka Solution<small>Starter — 12 posts, 1–2 platforms</small></div>
+        <div class="bar-track"><div class="bar-fill" data-w="44%">LKR 35,000</div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">Cypher Digital<small>Entry — 12 posts, from</small></div>
+        <div class="bar-track"><div class="bar-fill" data-w="75%">LKR 60,000+</div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">HypeX Pilot<small>8 posts, 1 platform</small></div>
+        <div class="bar-track"><div class="bar-fill" data-w="100%">LKR 80,000</div></div>
+      </div>
+      <div class="bar-row us">
+        <div class="bar-name">This proposal<small>4 platforms · 20 assets · daily WhatsApp</small></div>
+        <div class="bar-track"><div class="bar-fill" data-w="62%">LKR 40–60K</div></div>
+      </div>
+    </div>
+
+    <div class="tbl-wrap rv d1">
+      <table>
+        <thead>
+          <tr><th>Provider</th><th>Monthly Fee</th><th>Platforms</th><th>What You Get</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>E Lanka Solution</b><br><small style="color:var(--dim-2)">Starter Social</small></td>
+            <td class="price">LKR 35,000</td>
+            <td>1–2</td>
+            <td>12 posts, basic graphics. No video production, no WhatsApp.</td>
+          </tr>
+          <tr>
+            <td><b>Cypher Digital</b><br><small style="color:var(--dim-2)">Colombo</small></td>
+            <td class="price">from LKR 60,000</td>
+            <td>1–3</td>
+            <td>12 posts at entry. Reels only in higher tiers — priced above.</td>
+          </tr>
+          <tr>
+            <td><b>HypeX</b><br><small style="color:var(--dim-2)">Pilot Program</small></td>
+            <td class="price">LKR 80,000</td>
+            <td>1</td>
+            <td>8 posts, 2 stories, 1 clip. Ad budget extra. Growth tier: LKR 180,000.</td>
+          </tr>
+          <tr>
+            <td><b>In-house hire</b><br><small style="color:var(--dim-2)">Full-time employee</small></td>
+            <td class="price">LKR 80–150K<small style="color:var(--dim-2)"> + benefits</small></td>
+            <td>—</td>
+            <td>One person, one skill set. Leave, equipment and training on you.</td>
+          </tr>
+          <tr class="us">
+            <td><b>This proposal</b><br><small style="color:var(--gold-2)">Madina Textiles</small></td>
+            <td class="price yes">LKR 40–60K</td>
+            <td><b>4</b></td>
+            <td><b>12 reels + 8 photo posts · 3 new pages built · daily WhatsApp stock &amp; price · editing, captions, community — all in.</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src rv d2">
+      Published rates — E Lanka Solution: <a href="https://elankasolution.com/social-media-marketing-packages-sri-lanka" target="_blank" rel="noopener">elankasolution.com</a> ·
+      Cypher Digital: <a href="https://cypherdigital.lk/social-media-management-sri-lanka" target="_blank" rel="noopener">cypherdigital.lk</a> ·
+      HypeX: <a href="https://hypesrilanka.com/services/social-media-management/social-media-marketing-agency-sri-lanka/social-media-marketing-packages/" target="_blank" rel="noopener">hypesrilanka.com</a> ·
+      Market benchmark: organic social for 1–2 platforms runs LKR 25,000–60,000/mo (<a href="https://buzzconnect.lk/digital-marketing-cost-sri-lanka" target="_blank" rel="noopener">Buzz Connect 2026</a>).
+    </p>
+  </div>
+</section>
+
+<!-- 05 PRICE -->
+<section class="worth" id="price">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="sec-left">
+        <div class="idx"><b>05</b><span>The Price</span></div>
+        <h2>Why LKR 40–60K is<br><em>worth every rupee.</em></h2>
+      </div>
+      <p>Not the cheapest line item. The hardest working one.</p>
+    </div>
+
+    <div class="rate-hero rv">
+      <div class="k">Monthly Retainer</div>
+      <div class="rate">LKR 40–60K</div>
+      <p class="rate-sub">per month · <b>LKR 10,000–15,000/week</b> · final rate fixed by agreed deliverables</p>
+    </div>
+
+    <div class="tiles">
+      <div class="tile rv"><b>≈ LKR 2,500</b><span>per finished asset, all-in. Cypher works out to LKR 5,000/post · HypeX ≈ LKR 8,900.</span></div>
+      <div class="tile rv d1"><b class="white">20 assets</b><span>every month — 12 reels + 8 photo posts, delivered on schedule.</span></div>
+      <div class="tile rv d2"><b class="white">0 add-ons</b><span>page setup ×3, captions, calendar, community — no extra line items.</span></div>
+      <div class="tile rv d3"><b class="white">30 broadcasts</b><span>WhatsApp stock &amp; price updates monthly. No one else prices this in.</span></div>
+      <div class="tile rv d4"><b class="white">0 hires</b><span>no salary, no leave cover, no equipment. One retainer covers it all.</span></div>
+      <div class="tile rv d5"><b class="white">7 days</b><span>from yes to first content live. Pages up in week one.</span></div>
+    </div>
+
+    <div class="split">
+      <div class="half them rv">
+        <div class="tagline">Elsewhere — LKR 80,000 at HypeX</div>
+        <div class="amount">1 platform. 8 posts.</div>
+        <ul>
+          <li>8 posts + 2 stories, 1 promo clip</li>
+          <li>Ad budget on top — LKR 50,000+ recommended</li>
+          <li class="off">No WhatsApp community</li>
+          <li class="off">No page setup</li>
+          <li class="off">No daily updates</li>
+        </ul>
+      </div>
+      <div class="half us rv d1">
+        <div class="tagline">Here — LKR 40–60,000</div>
+        <div class="amount">4 platforms. 20 assets. Daily.</div>
+        <ul>
+          <li>12 reels + 8 photo posts, every month</li>
+          <li>3 new pages built and branded</li>
+          <li>Daily WhatsApp stock &amp; price broadcasts</li>
+          <li>CapCut editing + captions included</li>
+          <li>Zero ad-spend obligation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="quality">
+      <div class="q rv"><h3>Edited to stop the scroll</h3><p>Kinetic cuts, captions, trend audio — the pacing that gets watched, not skipped.</p></div>
+      <div class="q rv d1"><h3>Shot like premium product</h3><p>Fabric presented to lift perceived value — for local retailers and exporters alike.</p></div>
+      <div class="q rv d2"><h3>Built to close trade</h3><p>Feeds build the brand. WhatsApp turns views into orders — daily.</p></div>
+    </div>
+
+    <p class="src rv" style="text-align:center;margin-bottom:56px">
+      The math, from published rates: Cypher LKR 60,000 ÷ 12 posts = LKR 5,000/post · HypeX LKR 80,000 ÷ 9 pieces ≈ LKR 8,900/piece · This proposal LKR 50,000 ÷ 20 assets = <b style="color:var(--gold-2)">LKR 2,500/asset</b>.
+    </p>
+
+    <div class="worth-cta rv">
+      <a class="btn btn-gold btn-xl" href="#accept">Accept Proposal</a>
+      <p class="note">Itemized breakdown available on request.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 DECISION -->
+<section id="accept">
+  <div class="wrap accept-box">
+    <div class="idx rv" style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:16px">
+      <b style="font-size:.78rem;font-weight:800;color:#0A0F1C;background:linear-gradient(135deg,var(--gold-2),var(--gold));border-radius:8px;padding:.22rem .6rem">06</b>
+      <span style="font-size:.7rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--dim-2)">Decision</span>
+    </div>
+    <h2 class="rv d1">Say yes.<br><em>Shazan.</em></h2>
+    <p class="rv d2">Pages live in week one. First reels in week two. WhatsApp updated from day one.</p>
+    <button class="btn btn-accept rv d3" id="acceptBtn" type="button">Accept Proposal</button>
+    <div class="accepted-note" id="acceptedNote">✓ Proposal accepted — thank you, Shazan. Let's make Madina Textiles famous.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>Prepared for <b>Shazan Hafeez · Madina Textiles</b> · August 2026</span>
+    <span>FB · TikTok · IG · WhatsApp — 12 reels + 8 photos monthly — LKR 40–60K/mo</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- Progress bar ---------- */
+  var prog = document.getElementById("progress");
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- Reveal + bars + counters ---------- */
+  function animateBars(){
+    document.querySelectorAll("#bars .bar-fill").forEach(function(b,i){
+      setTimeout(function(){ b.style.width = b.getAttribute("data-w"); }, 150 + i*180);
+    });
+  }
+  function countUp(el){
+    var n = parseInt(el.getAttribute("data-n"),10), t0 = null, dur = 1300;
+    if(reduced){ el.textContent = n; return; }
+    function frame(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t-t0)/dur,1);
+      var e = 1 - Math.pow(1-p,3);
+      el.textContent = Math.round(n*e);
+      if(p<1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  var counted = false;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add("in");
+      if(e.target.id === "bars") animateBars();
+      if(e.target.classList.contains("hero-stats") && !counted){
+        counted = true;
+        e.target.querySelectorAll(".count").forEach(countUp);
+      }
+      io.unobserve(e.target);
+    });
+  },{threshold:.15});
+  document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+  /* ---------- Confetti ---------- */
+  var canvas = document.getElementById("confetti");
+  var ctx = canvas.getContext("2d");
+  var particles = [], raf = null;
+  var DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+  function resize(){
+    canvas.width = window.innerWidth * DPR;
+    canvas.height = window.innerHeight * DPR;
+    canvas.style.width = window.innerWidth + "px";
+    canvas.style.height = window.innerHeight + "px";
+    ctx.setTransform(DPR,0,0,DPR,0,0);
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  var COLORS = ["#E8A33D","#F5C563","#C9821E","#FFFFFF","#4CC287","#6590E6","#E85D75","#0B1322"];
+
+  function spawn(x,y,count,a0,a1,speed){
+    for(var i=0;i<count;i++){
+      var a = a0 + Math.random()*(a1-a0);
+      var v = speed * (0.55 + Math.random()*0.75);
+      particles.push({
+        x:x, y:y,
+        vx:Math.cos(a)*v, vy:Math.sin(a)*v,
+        w:6+Math.random()*7, h:8+Math.random()*10,
+        rot:Math.random()*Math.PI*2, vr:(Math.random()-.5)*0.32,
+        color:COLORS[(Math.random()*COLORS.length)|0],
+        life:0, max:150+Math.random()*90,
+        shape:Math.random()<.28?"circle":"rect"
+      });
+    }
+    if(!raf) raf = requestAnimationFrame(tick);
+  }
+
+  function tick(){
+    ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+    for(var i=particles.length-1;i>=0;i--){
+      var p = particles[i];
+      p.life++;
+      p.vy += 0.14; p.vx *= 0.985; p.vy *= 0.995;
+      p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+      var fade = 1 - Math.max(0,(p.life-p.max*0.7)/(p.max*0.3));
+      ctx.save();
+      ctx.globalAlpha = Math.max(0,fade);
+      ctx.translate(p.x,p.y); ctx.rotate(p.rot); ctx.fillStyle = p.color;
+      if(p.shape==="circle"){
+        ctx.beginPath(); ctx.arc(0,0,p.w/2,0,Math.PI*2); ctx.fill();
+      }else{
+        ctx.scale(Math.sin(p.life*0.12+p.rot),1);
+        ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
+      }
+      ctx.restore();
+      if(p.life>p.max || p.y>window.innerHeight+40) particles.splice(i,1);
+    }
+    if(particles.length) raf = requestAnimationFrame(tick);
+    else { raf = null; ctx.clearRect(0,0,window.innerWidth,window.innerHeight); }
+  }
+
+  function celebrate(){
+    if(reduced) return;
+    var w = window.innerWidth, h = window.innerHeight;
+    spawn(w/2, h*0.62, 150, -Math.PI*0.85, -Math.PI*0.15, 13);
+    setTimeout(function(){ spawn(0, h*0.75, 80, -Math.PI*0.55, -Math.PI*0.05, 15); }, 180);
+    setTimeout(function(){ spawn(w, h*0.75, 80, -Math.PI*0.95, -Math.PI*0.45, 15); }, 320);
+    setTimeout(function(){ spawn(w/2, h*0.3, 70, -Math.PI, 0, 8); }, 650);
+    setTimeout(function(){ spawn(w*0.25, h*0.4, 50, -Math.PI*0.8, -Math.PI*0.2, 11); }, 1000);
+    setTimeout(function(){ spawn(w*0.75, h*0.4, 50, -Math.PI*0.8, -Math.PI*0.2, 11); }, 1150);
+  }
+
+  /* ---------- Accept ---------- */
+  var btn = document.getElementById("acceptBtn");
+  var note = document.getElementById("acceptedNote");
+  var accepted = false;
+  btn.addEventListener("click", function(){
+    celebrate();
+    if(!accepted){
+      accepted = true;
+      btn.textContent = "✓ Proposal Accepted";
+      btn.classList.add("accepted");
+      note.classList.add("show");
+    }
+  });
+})();
+</script>
+</body>
+</html>
