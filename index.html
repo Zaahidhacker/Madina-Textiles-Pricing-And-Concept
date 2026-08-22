@@ -117,8 +117,11 @@
   @supports ((-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff)){
     h1 .stroke{color:transparent;-webkit-text-stroke:1.5px rgba(244,241,234,.55)}
   }
-  h1 .fill{display:block;background:linear-gradient(100deg,var(--gold-2) 15%,var(--gold) 55%,var(--gold-3) 90%);
-    -webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .fill{display:block;
+    background:linear-gradient(100deg,var(--gold-2) 15%,var(--gold) 45%,#FFF3D6 50%,var(--gold) 55%,var(--gold-3) 90%);
+    background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:sheen 5s linear infinite}
+  @keyframes sheen{to{background-position:-200% center}}
   .hero-sub{color:#C4CEDD;font-size:clamp(.92rem,1.5vw,1.08rem);max-width:58ch;font-weight:300}
   .hero-sub b{color:#fff;font-weight:600}
   .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:36px}
@@ -140,10 +143,12 @@
 
   /* ============ MARQUEE ============ */
   .marquee{background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));color:#0A0F1C;
-    overflow:hidden;padding:.85rem 0;border-block:1px solid rgba(0,0,0,.2)}
+    overflow:hidden;padding:.95rem 0;border-block:1px solid rgba(0,0,0,.2);
+    transform:rotate(-1.2deg) scale(1.02);margin-block:14px;
+    box-shadow:0 14px 40px -14px rgba(232,163,61,.5)}
   .mq-track{display:flex;width:max-content;animation:mq 26s linear infinite}
   .mq-track span{display:inline-flex;align-items:center;gap:1.6rem;padding-right:1.6rem;
-    font-size:.86rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;white-space:nowrap}
+    font-size:.95rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;white-space:nowrap}
   .mq-track span::after{content:"✦";font-size:.8em}
   @keyframes mq{to{transform:translateX(-50%)}}
 
@@ -211,10 +216,10 @@
     background:rgba(245,197,99,.09);border:1px solid rgba(245,197,99,.25);border-radius:999px;padding:.34rem .8rem}
 
   /* ---- market ---- */
-  .verdict{display:flex;align-items:center;gap:16px;border:1px solid rgba(245,197,99,.35);
-    background:linear-gradient(90deg,rgba(232,163,61,.12),rgba(232,163,61,.03));
-    border-radius:14px;padding:18px 24px;font-size:.92rem;font-weight:600;color:var(--gold-2);
-    margin-bottom:44px}
+  .verdict{display:flex;align-items:center;gap:18px;border:1px solid rgba(245,197,99,.4);
+    background:linear-gradient(90deg,rgba(232,163,61,.14),rgba(232,163,61,.03));
+    border-left:4px solid var(--gold);border-radius:14px;padding:20px 26px;
+    font-size:1rem;font-weight:600;color:var(--gold-2);margin-bottom:44px}
   .verdict b{color:#fff}
   .bars{display:flex;flex-direction:column;gap:14px;margin-bottom:46px}
   .bar-row{display:grid;grid-template-columns:210px 1fr;gap:16px;align-items:center}
@@ -232,9 +237,12 @@
   thead th{text-align:left;font-size:.64rem;letter-spacing:2px;text-transform:uppercase;color:var(--dim-2);
     font-weight:700;padding:16px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02);white-space:nowrap}
   tbody td{padding:18px 20px;border-bottom:1px solid var(--line-soft);vertical-align:top;color:#C4CEDD}
+  tbody tr{transition:background .25s}
+  tbody tr:hover{background:rgba(255,255,255,.035)}
   tbody tr:last-child td{border-bottom:none}
   tbody tr.us{background:linear-gradient(90deg,rgba(232,163,61,.13),rgba(232,163,61,.03));
     box-shadow:inset 3px 0 0 var(--gold)}
+  tbody tr.us:hover{background:linear-gradient(90deg,rgba(232,163,61,.22),rgba(232,163,61,.06))}
   tbody td b{color:#fff}
   .price{font-weight:800;color:#fff;white-space:nowrap}
   .price.yes{color:var(--gold-2)}
@@ -249,8 +257,9 @@
   .rate-hero{text-align:center;margin-bottom:64px}
   .rate-hero .k{font-size:.7rem;font-weight:800;letter-spacing:3.4px;text-transform:uppercase;color:var(--gold-2)}
   .rate{font-size:clamp(2.7rem,8vw,5.6rem);font-weight:900;letter-spacing:-3px;line-height:1.05;margin:14px 0 10px;
-    background:linear-gradient(110deg,var(--gold-2),var(--gold) 60%,var(--gold-3));
-    -webkit-background-clip:text;background-clip:text;color:transparent}
+    background:linear-gradient(110deg,var(--gold-2),var(--gold) 45%,#FFF3D6 50%,var(--gold) 55%,var(--gold-3));
+    background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:sheen 5s linear infinite}
   .rate-sub{color:var(--dim);font-size:.92rem}
   .rate-sub b{color:#fff;font-weight:600}
 
@@ -291,13 +300,22 @@
   #accept{text-align:center;padding:130px 0 140px;position:relative;overflow:hidden}
   #accept::before{content:"";position:absolute;inset:0;
     background:radial-gradient(700px 380px at 50% 60%,rgba(232,163,61,.13),transparent 65%)}
+  .wm{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    font-size:clamp(5rem,20vw,16rem);font-weight:900;letter-spacing:-.04em;line-height:1;
+    color:rgba(245,197,99,.05);pointer-events:none;user-select:none;white-space:nowrap}
+  @supports ((-webkit-text-stroke:1px #fff) or (text-stroke:1px #fff)){
+    .wm{color:transparent;-webkit-text-stroke:1px rgba(245,197,99,.13)}
+  }
   .accept-box{position:relative;max-width:680px;margin-inline:auto}
   #accept .idx{justify-content:center}
   #accept h2{margin-bottom:14px}
   #accept p{color:var(--dim);font-size:.95rem}
   .btn-accept{margin-top:36px;padding:1.25rem 3.6rem;font-size:1.12rem;
     background:linear-gradient(135deg,var(--gold-2),var(--gold));color:#0A0F1C;
-    box-shadow:0 20px 50px -12px rgba(232,163,61,.7);animation:bob 3s ease-in-out infinite}
+    box-shadow:0 20px 50px -12px rgba(232,163,61,.7);
+    animation:bob 3s ease-in-out infinite,glow 2.4s ease-in-out infinite}
+  @keyframes glow{0%,100%{box-shadow:0 20px 50px -12px rgba(232,163,61,.55),0 0 0 0 rgba(245,197,99,.45)}
+    50%{box-shadow:0 20px 60px -10px rgba(232,163,61,.9),0 0 0 16px rgba(245,197,99,0)}}
   .btn-accept:hover{transform:translateY(-4px) scale(1.02)}
   .btn-accept.accepted{background:linear-gradient(135deg,#4CC287,#2FA36B);color:#fff;animation:none;
     box-shadow:0 20px 50px -12px rgba(47,163,107,.6)}
@@ -481,7 +499,7 @@
         <div class="idx"><b>03</b><span>Workflow</span></div>
         <h2>You sell.<br><em>I do the rest.</em></h2>
       </div>
-      <p>Fazal records. I edit. Faizan posts. Your team never stops selling.</p>
+      <p>Fazal records. I edit. Fazal posts. Your team never stops selling.</p>
     </div>
     <div class="steps">
       <div class="step rv">
@@ -495,9 +513,9 @@
         <span class="who">CapCut · Edit + Captions</span>
       </div>
       <div class="step rv d2">
-        <h3>Faizan receives</h3>
+        <h3>Fazal receives</h3>
         <p>Final cut + ready caption, sent for upload.</p>
-        <span class="who">Faizan · Point of Contact</span>
+        <span class="who">Fazal · Point of Contact</span>
       </div>
       <div class="step rv d3">
         <h3>Goes live</h3>
@@ -661,6 +679,7 @@
 
 <!-- 06 DECISION -->
 <section id="accept">
+  <div class="wm" aria-hidden="true">MADINA</div>
   <div class="wrap accept-box">
     <div class="idx rv" style="display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:16px">
       <b style="font-size:.78rem;font-weight:800;color:#0A0F1C;background:linear-gradient(135deg,var(--gold-2),var(--gold));border-radius:8px;padding:.22rem .6rem">06</b>
